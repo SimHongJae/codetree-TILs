@@ -10,7 +10,8 @@ int main() {
     cin>>n;
     for(int i=3;i<=n;i++){
         arr[i] = arr[i-1] + 2*arr[i-2];
+        arr[i] %=10007;
     }
-    cout<<arr[n];
+    cout<<arr[n]%10007;
     return 0;
 }
