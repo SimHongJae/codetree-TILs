@@ -3,14 +3,14 @@
 using namespace std;
 
 typedef struct Point{
-    long long int x;
-    long long int y;
+    int x;
+    int y;
 }PT;
 
 typedef struct Point2{
-    long long int x;
-    long long int y;
-    long long int arr;
+    int x;
+    int y;
+    int arr;
 }PT2;
 
 int compare(PT2 a, PT2 b){
@@ -22,14 +22,14 @@ int compare(PT2 a, PT2 b){
     }
     return a.arr<b.arr;
 }
-long long int arr[505][505];
-long long int ans[505][505];
-PT2 arr2[250050];
+int arr[505][505];
+int ans[505][505];
+PT2 arr2[250000];
 
 int main() {
-    long long int n;
+    int n;
    
-    long long int max_num = 0;
+    int max_num = 0;
     PT max_pt;
     cin>>n;
     for(int i=0;i<n;i++){
@@ -46,8 +46,8 @@ int main() {
 
     
     
-    long long int dx[4]={1,-1,0,0};
-    long long int dy[4]={0,0,1,-1};
+    int dx[4]={1,-1,0,0};
+    int dy[4]={0,0,1,-1};
 
     queue<PT> q;
     for(int i=0;i<n*n;i++){
@@ -88,7 +88,7 @@ int main() {
         
    
     
-   long long int max_ans=0;
+   int max_ans=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             
