@@ -22,9 +22,9 @@ int compare(PT2 a, PT2 b){
     }
     return a.arr<b.arr;
 }
-long long int arr[1000][1000];
-long long int ans[1000][1000];
-PT2 arr2[1000000];
+long long int arr[505][505];
+long long int ans[505][505];
+PT2 arr2[250050];
 
 int main() {
     long long int n;
