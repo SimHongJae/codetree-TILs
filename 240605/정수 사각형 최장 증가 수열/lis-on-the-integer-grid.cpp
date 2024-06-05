@@ -31,10 +31,10 @@ int main() {
    
     int max_num = 0;
     PT max_pt;
-    cin>>n;
+    scanf("%d",&n);
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
-            cin>>arr[i][j];
+            scanf("%d",&arr[i][j]);
             arr2[n*i+j].arr = arr[i][j];
             arr2[n*i+j].x=i;
             arr2[n*i+j].y=j;
@@ -97,6 +97,6 @@ int main() {
         }
     }
 
-    cout<<max_ans;
+    printf("%d",max_ans);
     return 0;
 }
