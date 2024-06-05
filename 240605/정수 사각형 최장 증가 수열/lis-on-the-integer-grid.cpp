@@ -7,14 +7,14 @@ typedef struct Point{
     int y;
 }PT;
 
-int arr[1000][1000];
-int ans[1000][1000];
+long long int arr[1000][1000];
+long long int ans[1000][1000];
 
 
 int main() {
-    int n;
+    long long int n;
    
-    int max_num = 0;
+    long long int max_num = 0;
     PT max_pt;
     cin>>n;
     for(int i=0;i<n;i++){
@@ -28,8 +28,8 @@ int main() {
         }
     }
     ans[max_pt.x][max_pt.y] = 1;
-    int dx[4]={1,-1,0,0};
-    int dy[4]={0,0,1,-1};
+    long long int dx[4]={1,-1,0,0};
+    long long int dy[4]={0,0,1,-1};
 
     queue<PT> q;
     q.push(max_pt);
@@ -54,7 +54,7 @@ int main() {
         }
     }
 
-    int max_ans=0;
+   long long int max_ans=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             
